@@ -1,0 +1,25 @@
+ Chia sẻ phần mềm reg tài khoản SF cho anh em đỡ mỏi tay.
+Tự động ghi dữ liệu vào file, tự động backup, đổi mật khẩkhẩu.
+edit link github ko hoạt động, mình đăng public rồi mà vẫn lỗi nên dùng link drive ở dưới
+Link: https://github.com/hehehehehehe1ty/Du_Hoc_Online/tree/main
+Anh em nào có hiểu biết có thể hướng dẫn cho mọi người nhé còn mình nhát quá :))
+Mọi người có ý kiến đóng góp xin chia sẻ ở dưới phần bình luận .
+
+link gdriver: https://drive.google.com/drive/folders/1VLYopFLGUZiSVmSvciHxwXdRDbN_g84T?usp=drive_link
+
+Hướng dẫn copy bên github:
+
+App giúp anh em du học online số lượng lớn
+Bước 1: Tạo tài khoản ở https://tempmail.id.vn/ sau đó truy cập https://tempmail.id.vn/en/profile để tạo API mail tạm thời (mail này vẫn có thể sử dụng sau này để đổi mật khẩu)
+Bước 2: Tải chromedriver phù hợp với phiên bản máy tính của bạn. Còn không thì tải phiên bản mới nhất https://googlechromelabs.github.io/chrome-for-testing/#stable xong rồi bỏ vào thư mục driver với tên chromedriver.exe
+Bước 3: Cài thư viện xong rồi chạy thôi. (nhát làm quá, có hiểu biết chút thì tự làm)
+Hướng dẫn sử dụng
+Nếu cùng chọn cùng hai ô Tạo mail và Đổi mật khẩu thì sẽ tự động tạo tài khoản rồi đổi mật khẩu ngay sau đó.
+Anh em làm thêm dùm với nhát quá :))
+Edit:
+Ai thiếu file captchasolver.crx thì tải ở dưới xong rồi bỏ vào thư mục driver: https://drive.google.com/file/d/1hKcvvjOn2QZbSwm7rZOfkdn-hgnyGlmg/view?usp=drive_link
+
+cái này là chỉ để tự giải captcha, tự tải cái khác cũng được rồi đặt tên captchasolver.crx
+
+lệnh cài thư viện:
+pip install PyQt6 faker selenium openpyxl
