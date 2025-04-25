@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>686</width>
+    <height>436</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Du học online</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="log">
+    <property name="geometry">
+     <rect>
+      <x>345</x>
+      <y>10</y>
+      <width>331</width>
+      <height>416</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="mail">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>185</y>
+      <width>326</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Tạo mail</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>25</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Số lượng:</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="quantity">
+     <property name="geometry">
+      <rect>
+       <x>255</x>
+       <y>25</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>161</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Thời gian chờ cho mỗi bước:</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="waitTime">
+     <property name="geometry">
+      <rect>
+       <x>255</x>
+       <y>55</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="minimum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>2.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="headlessMode">
+     <property name="geometry">
+      <rect>
+       <x>299</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>211</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Chạy trong nền</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="password">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>326</width>
+      <height>86</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Đổi mật khẩu</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>25</y>
+       <width>301</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Tạo mật khẩu mới</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="newPass">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>20</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>16</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="tristate">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>55</y>
+       <width>146</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Thời gian đợi để lấy mail</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="waitSecGetMail">
+     <property name="geometry">
+      <rect>
+       <x>261</x>
+       <y>50</y>
+       <width>56</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="minimum">
+      <number>5</number>
+     </property>
+     <property name="value">
+      <number>10</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="backup">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>5</y>
+      <width>326</width>
+      <height>116</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Dữ liệu</string>
+    </property>
+    <widget class="QLineEdit" name="dataFile">
+     <property name="geometry">
+      <rect>
+       <x>215</x>
+       <y>20</y>
+       <width>101</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>data.xlsx</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>85</y>
+       <width>126</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Tạo backup khi chạy</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="isBackup">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>85</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>55</y>
+       <width>86</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Tên file backup:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="backupFile">
+     <property name="geometry">
+      <rect>
+       <x>215</x>
+       <y>50</y>
+       <width>101</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>backup.xlsx</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>25</y>
+       <width>86</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Tên file dữ liệu:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="temp_mail">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>125</y>
+      <width>326</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Mail tạm thời</string>
+    </property>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>25</y>
+       <width>49</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Token:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tempMailToken">
+     <property name="geometry">
+      <rect>
+       <x>165</x>
+       <y>20</y>
+       <width>131</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="saveToken">
+     <property name="geometry">
+      <rect>
+       <x>295</x>
+       <y>19</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>save.png</normaloff>save.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>14</width>
+       <height>14</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="stop">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>400</y>
+      <width>161</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dừng</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="run">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>161</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Chạy</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
